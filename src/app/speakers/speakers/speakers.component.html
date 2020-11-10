@@ -1,0 +1,20 @@
+<div>
+  <mat-accordion class="example-headers-align" multi>
+    <mat-expansion-panel *ngFor="let speaker of speakers">
+      <mat-expansion-panel-header [matTooltip]="speaker.desc" (mouseover)="onMouseOver(speaker)"
+        (click)="onClick(speaker)">
+        <div>
+          {{speaker.value}}
+        </div>
+      </mat-expansion-panel-header>
+      <div>
+        <div *ngFor="let session of speaker.sessions">
+          <div *ngFor="let item of session">
+            {{item.name}}: {{item.value}} <br>
+          </div>
+          <br>
+        </div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

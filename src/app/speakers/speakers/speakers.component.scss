@@ -1,0 +1,9 @@
+.mat-expansion-panel {
+    margin: 16px !important;
+    box-shadow: 0 2px 9px 0 rgba(0,0,0,.08), 0 0 1px 0 rgba(0,0,0,.2);
+    border-radius: 8px !important;
+    border-left: 10px solid rgb(252, 76, 2);
+    .mat-expansion-panel-header {
+        height: 65px;
+    }
+}
